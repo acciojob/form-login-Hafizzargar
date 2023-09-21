@@ -1,7 +1,7 @@
 function getFormvalue() {
     //Write your code here
 
-	var firstName = document.getElementByClassName("form1").elements.namedItem("fname").value;
+	var firstName = document.getElementById("form1").elements.namedItem("fname").value;
     var lastName = document.getElementById("form1").elements.namedItem("lname").value;
 
     // Check if both fields are not empty
