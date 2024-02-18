@@ -1,24 +1,21 @@
-function getFormvalue() {
-    //Write your code here
+function getFormvalue(ev) {
 
-	var firstName = document.getElementById("form1").elements.namedItem("fname").value;
-    var lastName = document.getElementById("form1").elements.namedItem("lname").value;
+  var Name = document.querySelectorAll("#form1>input");
+  var firstName = Name[0];
+  var lastName = Name[1];
+  console.log(Name[0].value);
 
-    // Check if both fields are not empty
-    if (firstName.trim() !== "" && lastName.trim() !== "") {
-        // Display an alert with the user's first and last name
-        alert(firstName +" "+ lastName);
-    } else {
-        
-        alert("Please fill in both First Name and Last Name fields.");
-    }
 
+  if (firstName.value == "" || lastName.value == "") {
     
-    return false;
-	
-	
-	
+    alert("Please fill in both First Name and Last Name fields.");
 
-	
+  } else {
+    alert(firstName.value + " " + lastName.value);
+
+
+  }
+  ev.preventDefault();
+
 
 }
