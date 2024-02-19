@@ -6,20 +6,20 @@ function getFormvalue(ev) {
   
 
 
-  // if (firstName.value == "" || lastName.value == "") {
+  if (firstName.value == "" || lastName.value == "") {
     
-  //   alert("Please fill in both First Name and Last Name fields.");
+    alert("Please fill in both First Name and Last Name fields.");
 
-  // } else {
-  //   alert(firstName.value + " " + lastName.value);
+  } else {
+    alert(firstName.value + " " + lastName.value);
 
 
-  // }
+  }
   // ev.preventDefault();
-	var fullName = firstName.value + " " + lastName.value;
+	// var fullName = firstName.value + " " + lastName.value;
 
     
-    alert(fullName);
+ //    alert(fullName);
 
 
 }
